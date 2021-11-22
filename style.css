@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    /* color: #292929; */
+    background-color: #e5ded8;
+}
+main {
+    color: #292929;
+    padding-bottom: 30px;
+}
+main div.container {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+    box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.75);
+}
+p {
+    font-size: 20px;
+}
+.main-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.main-card {
+    margin: 0 50px 0 50px;
+}
+h3 {
+    font-weight: normal;
+}
+span.footer {
+    font-weight: bold;
+}
+form {
+    margin: 0 auto; 
+    float: right;
+}
+.container {
+    max-width: 1200px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.border {
+    border: 1px solid red;
+}
+.search {
+    height: 33px;
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: auto;
+    font-size: 15px;
+    width: 200px;
+    border-radius: 15px;
+    border: none;
+}
+.search-button {
+    float: right;
+    margin-top: 8px;
+    cursor: pointer;
+    height: 33px;
+    width: 33px;
+    border: none;
+    background-color: #292929;
+}
+input.search {
+    padding-left: 10px;
+}
+input:focus {
+   outline: none;
+}
+input:focus::placeholder {
+    color: transparent;
+}
+a {
+    text-decoration: none;
+    color: #347deb;
+}
+a:visited {
+    color: #347deb;
+}
+a:hover {
+    font-weight: bold;
+}
+.socials {
+    margin-top: 40px;
+}
+.social {
+    padding: 0 10px 0 10px;
+}
+.search-img {
+    filter: invert(100%) sepia(2%) saturate(10%) hue-rotate(46deg) brightness(103%) contrast(100%);
+}
+#top {
+    min-height: 100px;
+}
+#footer-text {
+    margin-bottom: 40px;
+}
+footer {
+    height: 250px;
+    background-color: #292929;
+}
+header {
+    margin-bottom: 50px;
+    background-color: #292929;
+}
+header div div h1 {
+    font-weight: bolder;
+}
+/* .navbar {
+    position: sticky;
+    top: 0;
+} */
+.item1 {
+    min-height: 850px;
+    width: 100%;
+    background-image:url(header.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.item2 {
+    min-height: 850px;
+    width: 100%;
+    background-image:url(13.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.item3 {
+    min-height: 850px;
+    width: 100%;
+    background-image:url(12.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.item4 {
+    min-height: 850px;
+    width: 100%;
+    background-image:url(15.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+footer div.content {
+    align-items: initial;
+    align-content: initial;
+}
+.home-demo .item {
+    background: #ff3f4d;
+}
+.home-demo h2 {
+    padding: 5rem 0;
+    margin: 0;
+}
+/* @media only screen and (min-width: 360px) {
+    header {
+        height: 300px;
+        margin-bottom: 250px;
+    }
+    #logo {
+        margin: 0 auto 0 auto;
+    }
+    .header-text {
+        margin: 0 auto 0 auto;
+    }
+    #form-div {
+        width: 100%;
+    }
+    form {
+        margin-bottom: 30px;
+        margin-left: 70px;
+    }
+    .search {
+        width: 290px;
+        margin-left: -100px;
+    }
+    .search-button {
+        margin-right: 10;
+    }
+    footer {
+        height: 470px;
+        padding-left: 20px;
+    }
+    main div.container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    header {
+        margin-bottom: 300px;
+    }
+    #logo {
+        width: 100%;
+    }
+    #logo img {
+        margin-left: 160px;
+    }
+    .search {
+        width: 360px;
+        margin-left: -100px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        margin-bottom: 500px;
+    }
+    #logo {
+        width: 114px;
+        float: left;
+        margin: 10px 0 0 30px;
+    }
+    #logo img {
+        margin: 0;
+    }
+    .header-text {
+        margin: 0;
+        margin-right: 230px;
+    }
+    footer {
+        padding-right: 20px;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        margin-bottom: 600px;
+    }
+    .header-text {
+        margin: 0;
+        margin-right: 350px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    header {
+        margin-bottom: 770px;
+    }
+    .header-text {
+        margin: 0;
+        margin-right: 430px;
+    }
+} */
