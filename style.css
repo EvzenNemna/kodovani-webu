@@ -65,7 +65,7 @@ form {
     height: 33px;
     width: 33px;
     border: none;
-    background-color: #292929;
+    background-color: #347deb;
 }
 input.search {
     padding-left: 10px;
@@ -101,44 +101,48 @@ a:hover {
 #footer-text {
     margin-bottom: 40px;
 }
+.carousel {
+    margin-bottom: 50px;
+}
+#caoursel-div {
+    height: 850px;
+}
 footer {
     height: 250px;
-    background-color: #292929;
+    background-color: #3a3d42;
 }
 header {
-    margin-bottom: 50px;
-    background-color: #292929;
+    background-color: #347deb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 header div div h1 {
     font-weight: bolder;
 }
-/* .navbar {
-    position: sticky;
-    top: 0;
-} */
 .item1 {
-    min-height: 850px;
+    height: 700px;
     width: 100%;
     background-image:url(header.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .item2 {
-    min-height: 850px;
+    height: 700px;
     width: 100%;
     background-image:url(13.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .item3 {
-    min-height: 850px;
+    height: 700px;
     width: 100%;
     background-image:url(12.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .item4 {
-    min-height: 850px;
+    height: 700px;
     width: 100%;
     background-image:url(15.jpg);
     background-repeat: no-repeat;
@@ -162,95 +166,172 @@ footer div.content {
     padding: 5rem 0;
     margin: 0;
 }
-/* @media only screen and (min-width: 360px) {
-    header {
-        height: 300px;
-        margin-bottom: 250px;
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #347deb;
+}
+ul.topnav li {
+    float: left;
+}
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+ul.topnav li a:hover:not(.active) {
+    background-color: #1e53a3;
+}
+ul.topnav li a.active {
+    /* color: #292929; */
+    background-color: #1e53a3;
+}
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 1440px) {
+    .item1, .item2, .item3 {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    main div.container {
+        margin: 0 20px 30px 20px;
+    }
+    footer {
+        padding: 0 20px 20px 20px;
     }
     #logo {
-        margin: 0 auto 0 auto;
-    }
-    .header-text {
-        margin: 0 auto 0 auto;
+        margin-left: 10px;
     }
     #form-div {
-        width: 100%;
+        margin-right: 10px;
+    } 
+    .item1, .item2, .item3 {
+        height: 500px;
     }
-    form {
-        margin-bottom: 30px;
-        margin-left: 70px;
-    }
-    .search {
-        width: 290px;
-        margin-left: -100px;
-    }
-    .search-button {
-        margin-right: 10;
-    }
-    footer {
-        height: 470px;
-        padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #carousel-div {
+        height: 500px;
     }
     main div.container {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
-
-@media only screen and (min-width: 425px) {
-    header {
-        margin-bottom: 300px;
-    }
-    #logo {
-        width: 100%;
-    }
-    #logo img {
-        margin-left: 160px;
-    }
-    .search {
-        width: 360px;
-        margin-left: -100px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    header {
-        margin-bottom: 500px;
-    }
-    #logo {
-        width: 114px;
-        float: left;
-        margin: 10px 0 0 30px;
-    }
-    #logo img {
-        margin: 0;
-    }
-    .header-text {
-        margin: 0;
-        margin-right: 230px;
+        margin: 0 20px 30px 20px;
     }
     footer {
-        padding-right: 20px;
+        padding: 0 20px 20px 20px;
+    }
+    .item1, .item2, .item3 {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+
+@media screen and (max-width: 425px) {
+    #carousel-div {
+        height: 250px;
+    }
+    main div.container {
+        margin: 0 10px 20px 10px;
+    }
+    footer {
+        height: fit-content;
+        padding: 0 0 20px 10px;
+    }
+    input.search {
+        margin-left: 105px;
+        margin-bottom: 10px;
+    }
+    #logo {
+        margin: 0 auto 0 auto;;
+    }
+    #header-header {
+        margin: 0 auto 0 auto;
+        padding-left: 50px;
+    }
+    #address {
+        margin-right: 20px;
+    }
+    .item1, .item2, .item3 {
+        height: 230px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .carousel {
+        height: 250px;
+    }
+    main div.container {
+        margin: 0 10px 20px 10px;
+    }
+    footer {
+        height: fit-content;
+        padding: 0 0 20px 10px;
+    }
+    input.search {
+        margin-left: 70px;
+        margin-bottom: 10px;
+    }
+    #logo {
+        margin: 0 auto 0 auto;;
+    }
+    #header-header {
+        margin: 0 auto 0 auto;
+    }
+    #address {
+        margin-right: 0px;
+    }
+    .item1, .item2, .item3 {
+        height: 230px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .carousel {
+        height: 250px;
+    }
+    main div.container {
+        margin: 0 10px 10px 10px;
+    }
+    footer {
+        height: fit-content;
+        padding: 0 0 20px 10px;
+    }
+    input.search {
+        margin-left: 70px;
+        margin-bottom: 10px;
+    }
+    #logo {
+        margin: 0 auto 0 auto;;
+    }
+    #header-header {
+        margin: 0 auto 0 auto;
+    }
+    .carousel {
+        margin-bottom: 0;
+    }
+    .item1, .item2, .item3 {
         height: 200px;
     }
+    header {
+        position: initial;
+    }
+
 }
 
-@media only screen and (min-width: 1024px) {
-    header {
-        margin-bottom: 600px;
-    }
-    .header-text {
-        margin: 0;
-        margin-right: 350px;
-    }
-}
 
-@media only screen and (min-width: 1440px) {
-    header {
-        margin-bottom: 770px;
-    }
-    .header-text {
-        margin: 0;
-        margin-right: 430px;
-    }
-} */
+
+
