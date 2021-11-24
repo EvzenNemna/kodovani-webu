@@ -15,8 +15,6 @@ main {
 main div.container {
     margin-bottom: 40px;
     padding-bottom: 40px;
-    background-color: white;
-    box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.75);
 }
 p {
     font-size: 20px;
@@ -44,6 +42,12 @@ form {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+}
+.card-container {
+    max-width: 575px;
+    margin: 0 0 50px 0;
+    background-color: white;
+    box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.75);
 }
 .border {
     border: 1px solid red;
@@ -104,6 +108,10 @@ a:hover {
 .carousel {
     margin-bottom: 50px;
 }
+#gallery-header {
+    font-weight: bold;
+    font-size: 40px;
+}
 #caoursel-div {
     height: 850px;
 }
@@ -113,9 +121,9 @@ footer {
 }
 header {
     background-color: #347deb;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+}
+.read-more {
+    float: right;
 }
 header div div h1 {
     font-weight: bolder;
@@ -148,12 +156,25 @@ header div div h1 {
     background-repeat: no-repeat;
     background-size: 100%;
 }
+.gallery-img {
+    width: 383.3px;
+    height: 260px;
+    margin: 0 0 25px 0;
+    background-color: white;
+    box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.75);
+}
 .content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
+}
+.white-bg {
+    background-color: white;
+}
+.box-shadow {
+    box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.75);
 }
 footer div.content {
     align-items: initial;
@@ -176,22 +197,34 @@ ul.topnav {
 ul.topnav li {
     float: left;
 }
+
 ul.topnav li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px;
+    font-size: 17px;
     text-decoration: none;
     font-weight: bold;
+    position: relative;
 }
-ul.topnav li a:hover:not(.active) {
-    background-color: #1e53a3;
+ul.topnav li a:hover:not(.active), div.read-more:hover {
+    text-decoration: underline;
+    text-underline-offset: 12px;
 }
 ul.topnav li a.active {
-    /* color: #292929; */
-    background-color: #1e53a3;
+    text-decoration: underline;
+    text-underline-offset: 12px;
 }
 ul.topnav li.right {float: right;}
+
+.header-nav {
+    width: 100%;
+    background-color: #347deb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
 @media screen and (max-width: 1440px) {
     .item1, .item2, .item3 {
