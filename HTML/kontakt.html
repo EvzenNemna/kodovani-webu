@@ -4,9 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Muzeum Policie ČR</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Kontakt</title>
+    <script src="../JavaScript/script.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
@@ -38,13 +38,16 @@
     <div class="header-nav">
         <div class="container">
             <ul class="topnav">
+                <li id="topnav-bars"><a href="javascript:void(0);">
+                    <i class="fa fa-bars"></i>
+                </a></li>
                 <li><a href="index.html">Domů</a></li>
-                <li><a class="active" href="#">Novinky</a></li>
+                <li><a href="novinky.html">Novinky</a></li>
                 <li><a href="galerie.html">Fotogalerie</a></li>
-                <li><a href="clanky.html">Exponáty</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="../HTML/archiv.html">Archiv</a></li>
+                <li><a class="active" href="#">Kontakt</a></li>
                 <li class="right"><a href="about.html">O muzeu</a></li>
-              </ul>
+            </ul>
         </div>
     </div>
     <div class="carousel">
@@ -55,25 +58,72 @@
         </div>
     </div>
     <main>
-        <div class="container white-bg box-shadow">
-            <img src="header.png" class="main-img">
-            <div class="main-card">
-                <h1>Header</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="container" id="contact-main">
+            <h1>Kontakt</h1>
+            <div class="content" id="contact-content">
+                <div>
+                    <h2>Jméno</h2>
+                    <input type="text" class="search contact-name" id="name">
+                </div>
+                <div>
+                    <h2>Příjmení</h2>
+                    <input type="text" class="search contact-name">
+                </div>
+                <div>
+                    <h2>E-mail</h2>
+                    <input type="text" class="search contact-name">
+                </div>
+                <div>
+                    <h2>Vaše Zpráva</h2>
+                    <textarea class="contact-area"></textarea>
+                </div>
+            </div>
+            <div id="submit-button">
+                <button type="submit" class="form-send">Odeslat</button>
             </div>
         </div>
-        <div class="container white-bg box-shadow">
-            <img src="header.png" class="main-img">
-            <div class="main-card">
-                <h1>Header</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="container content stretch" id="contact-main-div">
+            <div>
+                <h2>Vedení muzea</h2>
             </div>
-        </div>
-        <div class="container white-bg box-shadow">
-            <img src="header.png" class="main-img">
-            <div class="main-card">
-                <h1>Header</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div>
+                <h3>Mgr. Radek Galaš</h3>
+                <h4>Ředitel muzea</h4>
+                <h4>fond "Písemnosti a tisky"</h4>
+                <a href="tel:+420 724 240 468">
+                    <h4>
+                        +420 724 240 468
+                    </h4>
+                </a>
+                <a href="tel:+420 974 824 830">
+                    <h4>
+                        +420 974 824 830
+                    </h4>
+                </a>
+                <a href="mailto:galas@muzeumpolicie.cz">
+                    <h4>
+                        galas@muzeumpolicie.cz
+                    </h4>
+                </a>
+            </div>
+            <div>
+                <h3>Ing. Mgr. Karel Vlček</h3>
+                <h4>Zástupce ředitele, ekonom</h4>
+                <a href="tel:+420 974 824 831">
+                    <h4>
+                        +420 974 824 831
+                    </h4>
+                </a>
+                <a href="tel:+420 724 194 206">
+                    <h4>
+                        +420 724 194 206
+                    </h4>
+                </a>
+                <a href="mailto:vlcek@muzeumpolicie.cz">
+                    <h4>
+                        vlcek@muzeumpolicie.cz
+                    </h4>
+                </a>
             </div>
         </div>
     </main>
@@ -105,4 +155,7 @@
         </div>
     </footer>
 </body>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBBk-8-olEvGrb3HSF_ftkxBSl2WdqiDI&callback=myMap"></script>
+    
 </html>

@@ -4,9 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Muzeum Policie ČR</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>O muzeu</title>
+    <script src="../JavaScript/script.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
@@ -38,13 +38,16 @@
     <div class="header-nav">
         <div class="container">
             <ul class="topnav">
-                <li><a href="index.html">Domů</a></li>
-                <li><a href="novinky.html">Novinky</a></li>
-                <li><a href="galerie.html">Fotogalerie</a></li>
-                <li><a href="clanky.html">Exponáty</a></li>
-                <li><a class="active" href="#">Kontakt</a></li>
-                <li class="right"><a href="about.html">O muzeu</a></li>
-              </ul>
+                <li id="topnav-bars"><a href="javascript:void(0);">
+                    <i class="fa fa-bars"></i>
+                </a></li>
+                <li><a href="../HTML/index.html">Domů</a></li>
+                <li><a href="../HTML/novinky.html">Novinky</a></li>
+                <li><a href="../HTML/galerie.html">Fotogalerie</a></li>
+                <li><a href="../HTML/archiv.html">Archiv</a></li>
+                <li><a href="../HTML/kontakt.html">Kontakt</a></li>
+                <li class="right"><a class="active" href="#">O muzeu</a></li>
+            </ul>
         </div>
     </div>
     <div class="carousel">
@@ -55,25 +58,18 @@
         </div>
     </div>
     <main>
-        <div class="container">
-            <img src="header.png" class="main-img">
-            <div class="main-card">
-                <h1>Header</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="container content stretch">
+            <h1>O nás</h1>
+            <div>
+                <h2>Muzeum policie</h2>
+                <p>Mapuje historii, vznik, vývoj a činnost bezpečnostních sborů na území našeho státu, kriminalistiku a známé kriminalistické případy, prezentuje problematiku dopravní a letecké služby, cizinecké a pohraniční policie, ale i bývalé státní bezpečnosti.</p>
             </div>
-        </div>
-        <div class="container">
-            <img src="header.png" class="main-img">
-            <div class="main-card">
-                <h1>Header</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
-        <div class="container">
-            <img src="header.png" class="main-img">
-            <div class="main-card">
-                <h1>Header</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div>
+                <h2>Historie</h2>
+                <p>Muzeum Policie České republiky je umístěno v areálu pražského Karlova, který byl založen roku 1350 českým králem a pozdějším římským císařem Karlem IV. pro augustiniánský klášterní řád.</p>
+                <p>O více než čtyři sta let později, za vlády císaře Josefa II., byl řád zrušen a jeho veškerý majetek připadl státu. V objektu bylo nejprve zřízeno erární skladiště, poté, roku 1791, špitál pro léčení nakažlivých nemocí. V roce 1955 musel být objekt pro nevyhovující stav a celkovou zchátralost vyklizen, do té doby byl využíván jako chorobinec, v letech 1914-1918 jako středisko pro válečné rekonvalescenty a později jako nemocnice.</p>
+                <p>Roku 1960 budovy získalo ministerstvo vnitra a byl zde umístěn Státní oblastní archiv. V letech následujících areál prošel celou řadou stavebních úprav a byla provedena generální oprava budov. Zhruba od poloviny šedesátých let minulého století je podstatná část areálu využívána pro muzejní účely. Nejprve bylo zřízeno Muzeum Pohraniční stráže, které bylo roku 1973 přetvořeno v Muzeum Sboru národní bezpečnosti a vojsk ministerstva vnitra. V rámci průběžných úprav byla do provozu uvedena výstavní síň, účelově byly rekonstruovány také venkovní prostory - park před muzeem byl upraven na přírodní galerii a na zahradě vzniklo dětské dopravní hřiště.</p>
+                <p>O zřízení Muzea Policie České republiky bylo rozhodnuto v roce 1990 a expozice byla pro veřejnost otevřena dne 12. dubna 1991. Toto muzeum objektivně dokumentuje a prezentuje historii, vývoj a činnost bezpečnostních sborů na území bývalého Československa od doby jeho vzniku po současnost.</p>
             </div>
         </div>
     </main>
