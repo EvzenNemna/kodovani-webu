@@ -114,8 +114,11 @@ a:hover {
 #top {
     min-height: 100px;
 }
-#footer-text {
+.footer-text {
     margin-bottom: 40px;
+}
+#footer-contact {
+    margin-top: 30px;
 }
 .carousel {
     margin-bottom: 50px;
@@ -128,7 +131,7 @@ a:hover {
     height: 850px;
 }
 footer {
-    height: 250px;
+    height: 530px;
     background-color: #3a3d42;
 }
 header {
