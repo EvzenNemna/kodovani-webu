@@ -14,18 +14,30 @@ main {
 }
 main div.container {
     margin-bottom: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
 }
 p {
     font-size: 20px;
 }
 .main-img {
     width: 100%;
-    height: 300px;
+    height: 230px;
     object-fit: cover;
+}
+.news-img {
+    width: 100%;
+}
+#news-card {
+    margin: 50px 0 0 0;
 }
 .main-card {
     margin: 0 50px 0 50px;
+}
+.main-card p {
+    font-size: 17px;
+}
+.main-card h1 {
+    font-size: 25px;
 }
 h3 {
     font-weight: normal;
@@ -44,7 +56,7 @@ form {
     margin-right: auto;
 }
 .card-container {
-    max-width: 575px;
+    max-width: 375px;
     margin: 0 0 50px 0;
     background-color: white;
     box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.75);
@@ -124,6 +136,9 @@ header {
 }
 .read-more {
     float: right;
+}
+.go-back {
+    float: left;
 }
 header div div h1 {
     font-weight: bolder;
@@ -208,7 +223,7 @@ ul.topnav li a {
     font-weight: bold;
     position: relative;
 }
-ul.topnav li a:hover:not(.active), div.read-more:hover {
+ul.topnav li a:hover:not(.active), div.read-more:hover, div.go-back:hover {
     text-decoration: underline;
     text-underline-offset: 12px;
 }
@@ -295,6 +310,16 @@ div#submit-button {
 .form-send:hover {
     cursor: pointer;
 }
+.page-header {
+    color: #3a3d42;
+}
+main div.container#page-header-container {
+    margin-bottom: 40px;
+    padding-bottom: 0px;
+}
+div.content#archive {
+    justify-content: space-evenly;
+}
 /* .search {
     height: 33px;
     padding: 6px;
@@ -306,10 +331,19 @@ div#submit-button {
     border: none;
 } */
 
+/* @media screen and (min-width: 601px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: left;}
+    ul.topnav li:not(:first-child) {display: initial;}
+    #topnav-bars {display: none;}
+} */
+
 @media screen and (max-width: 1440px) {
     .item1, .item2, .item3 {
         height: 700px;
     }
+    ul.topnav li:not(:first-child) {display: initial;}
+    #topnav-bars {display: none;}
 }
 
 @media screen and (max-width: 1024px) {

@@ -1,0 +1,11 @@
+#hlavicka{
+    margin: 10px 10px;
+  }
+  #hlavicka h1{
+    font-size: 200%;
+    font-weight: bolder;
+  }
+  
+  #mapa{
+    height:400px;
+  }
